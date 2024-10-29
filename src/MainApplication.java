@@ -1,7 +1,8 @@
 // Carl Owen
-//Lab 3
-//Main driver class
-//This class functions as the main driver and GUI components
+// Lab 3
+// Main driver class
+// This class functions as the main driver and GUI components
+// I made this repository right before the due date because my last projects file starting going crazy
 
 import javax.swing.*;
 import java.awt.*;
