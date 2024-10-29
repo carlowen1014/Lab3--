@@ -3,14 +3,14 @@
 // StatsPanel Class
 // This class updates with average, max, and min values
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.*; //Import Swing components for GUI
+import java.awt.*;    //Import AWT for layout management
 import java.util.List;
 
 public class StatsPanel extends JPanel
 {
     private JLabel avgLabel, maxLabel, minLabel;
-
+//Constructor to initialize the statistics panel
     public StatsPanel(List<MyDataClass> data)
     {
         setLayout(new GridLayout(3, 1));
