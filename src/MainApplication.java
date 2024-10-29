@@ -1,15 +1,22 @@
+// Carl Owen
+//Lab 3
+//Main driver class
+//This class functions as the main driver and GUI components
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 
 
-public class MainApplication extends JFrame {
+public class MainApplication extends JFrame 
+{
     private TablePanel tablePanel;
     private FilterPanel filterPanel;
     private DataProcessor dataProcessor;
 
 
-    public MainApplication(List<MyDataClass> data) {
+    public MainApplication(List<MyDataClass> data) 
+    {
         dataProcessor = new DataProcessor(data);
 
 
@@ -30,7 +37,8 @@ public class MainApplication extends JFrame {
 
 
     // Applies filters based on user selections
-    private void applyFilters() {
+    private void applyFilters() 
+    {
         String category = filterPanel.getSelectedCategory();
         String startDate = filterPanel.getStartDate();
         String endDate = filterPanel.getEndDate();
@@ -42,7 +50,8 @@ public class MainApplication extends JFrame {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         DataReader reader = new DataReader();
         List<MyDataClass> data = reader.readData("path_to_your_file.csv");
         new MainApplication(data);
