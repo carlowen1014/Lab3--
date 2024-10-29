@@ -11,7 +11,8 @@ import java.util.List;
 public class TablePanel extends JPanel {
     private JTable table;
     private DefaultTableModel tableModel;
-
+// Constructor to initialize the panel and components
+    
     public TablePanel(List<MyDataClass> data) {
         tableModel = new DefaultTableModel(new String[]{"Category", "Date", "Value"}, 0);
         table = new JTable(tableModel);
