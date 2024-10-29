@@ -10,7 +10,8 @@ import java.util.List;
 public class ChartPanel extends JPanel
 {
     private List<MyDataClass> data;
-
+    
+//Constructor to initialize the chart panel
     public ChartPanel(List<MyDataClass> data)
     {
         this.data = data;
